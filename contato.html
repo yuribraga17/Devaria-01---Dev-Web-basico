@@ -3,12 +3,12 @@
     <head> <!-- Configurações e parametros -->
         <meta charset="utf-8" /> <!-- Indicação da codificação decaracteres do documento -->
         <!-- Título da página -->
-        <title>Devaria 01 - Dev web basico</title>
+        <title>Devaria 01 - Fale conosco</title>
     </head>
 
     <body>
         <header> <!-- Cabeçalho da página - Inicio do site -->
-           <h1>Olá mundo! Essa é minha primeira página WEB!</h1> <!-- Marcação de titulo -->
+           <h1>Fale conosco</h1> <!-- Marcação de titulo -->
            <nav> <!-- Marcação de navegação - Menu/botões -->
                 <ul> <!-- Marcação de lista em formato de tópicos -->
                     <li><a href="index.html">Home</a></li> <!-- opção da lista -->
@@ -22,14 +22,44 @@
         <main>
             <!-- conteudo principal da página - Meio do site -->
             <h2>Para enviar uma mensagem para o Yuri Braga, preencha abaixo o formulário e clique em enviar</h2>
-        
             <section>  <!-- seção do documento -->
-                <form action="index.html">
+                <form action="index.html"> <!-- Criar um formulário -->
                     <p>
-                        <label>Nome:</label><input type="text" name="Nome" />
+                        <label>Nome: </label><input type="text" name="Nome" /> <!-- Marcação de legenda para um campo do form com marcação de entrada de texto simples -->
                     </p>
                     <p>
-                        <label>E-mail:</label><input type="text" name="Email />
+                        <label>Data de Nascimento: </label><input type="date" name="Data" /> <!-- Marcação de legenda para um campo do form com marcação de entrada de data -->
+                    </p>
+                    <p>
+                        <label>E-mail:</label><input type="text" name="Email" /> <!-- Marcação de legenda para um campo do form com marcação de entrada de texto simples -->
+                    </p>
+                    <p>
+                        <label>Comentário: </label>
+                        <textarea name="Comentario" rows="5" cols="50"></textarea> <!-- Marcação de legenda para um campo do form com marcação de entrada de texto multi-linhas -->
+                        <!-- Rows é linhas, cols é colunas, largura. -->
+                    </p>
+                    <p>
+                        <label>Sexo: </label>
+                        <input type="radio" name="Sexo" /> <label>Feminino</label> <!-- Marcação de um element botão de opção -->
+                        <input type="radio" name="Sexo" /> <label>Masculino</label> <!-- Marcação de um element botão de opção -->
+                    </p>
+                    <p>
+                        <label>Onde nos conheceu? </label>  <!-- Marcação de lista de opções -->
+                        <select name="Conheceu"> <!-- Opções da marcação -->
+                            <option selected>Youtube</option> 
+                            <option>Google</option>
+                            <option>Instagram</option>
+                            <option>Amigos</option>
+                            <option>Outros</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Novidades" value="Aceite" /> <!-- Marcação  de elemento de opção -->
+                        <label>Aceito receber e-mails de Novidades</label> <!-- Marcação botão de ação  do formulário -->
+                    </p>
+                    <p>
+                        <input type="submit" name="Enviar" value="Enviar" />
+                        <input type="reset" name="Limpar" value="Limpar" />
                     </p>
                 </form>
             </section>
@@ -38,7 +68,8 @@
         <footer>
             <!-- Roda da pé da página - Final do site -->
             <span>yuribragasoares@gmail.com</span> <br /> <!-- Mensagem do rodapé -->
-            <span>Conheça meu github</span> <br /> <!-- Mensagem do rodapé -->
+            <span>Conheça-me pelo <a href="https://github.com/yuribraga17">Github</a></span> <br /> <!-- Mensagem do rodapé -->
+            <span>Desenvolvido por <a href="https://instagram.com/yuri.braga17">Yuri Braga</a></span> <br /> <!-- Mensagem do rodapé -->
         </footer>
     </body>
 
