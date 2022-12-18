@@ -1,0 +1,89 @@
+/* Estilo relacionado a página contato.html */
+
+.sub-title {
+    margin: 0 20px;
+}
+
+main .contato-formulario > div {
+    margin: 15px 0;
+}
+
+main .contato-formulario > div label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+main .contato-formulario input,
+main .contato-formulario select,
+main .contato-formulario textarea {
+    width: 90%;
+    padding: 5px 15px;
+    outline-color: #3db42d;
+}
+
+main .contato-formulario select{
+    width: 100%;
+}
+
+main .contato-formulario textarea {
+    resize: none;
+    padding-top: 15px;
+}
+
+main .contato-formulario > div input[type="radio"],
+main .contato-formulario > div input[type="checkbox"] {
+    width: 25px;
+}
+
+main .contato-formulario > div:nth-child(5) span {
+    color: #25cbd3;
+}
+
+main .contato-formulario > div input[type="submit"],
+main .contato-formulario > div input[type="reset"] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+main .contato-formulario > div input[type="submit"] {
+    background-color: #3db42d;
+    padding: 10px;
+    font-weight: bold;
+}
+
+main .contato-formulario > div input[type="reset"] {
+    background-color: #5e49ff;
+    padding: 10px;   
+}
+
+@media screen and (min-width: 992px) {
+    main .contato-formulario {
+        width: 60%;
+        border: 1px solid #25cbd3;
+        border-radius: 20px;
+        padding: 25px;
+        margin: 25px auto;
+    }
+    main .contato-formulario input,
+    main .contato-formulario textarea {
+        width: 95%;
+        padding: 5px 15px;
+        outline-color: #3db42d;
+    }
+    main .contato-formulario select {
+        width: 40%;
+    }
+    main .contato-formulario > div input[type="submit"],
+    main .contato-formulario > div input[type="reset"] {
+        width: auto;
+        padding: 10px;
+        outline: none;
+    }
+    main .contato-formulario > div input[type="submit"]{
+        margin-right: 20px;
+    }
+}

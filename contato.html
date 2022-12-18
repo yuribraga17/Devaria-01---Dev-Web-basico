@@ -6,12 +6,12 @@
         <link rel="stylesheet" href="public/css/styles.css"/>
         <link rel="stylesheet" href="public/css/header.css"/>
         <link rel="stylesheet" href="public/css/footer.css"/>
+        <link rel="stylesheet" href="public/css/contato.css"/>
         <meta name="description" content="Página do Yuri Braga, coloque
-        a descrição do site aqui, upgrade!"> <!-- Descrição do site -->
-        <meta name="keywords" content="palavras, chaves, de, busca, melhorando, no, google"> <!-- Palavras chaves de busca -->
+        a descrição do site aqui, upgrade!"/> <!-- Descrição do site -->
+        <meta name="keywords" content="palavras, chaves, de, busca, melhorando, no, google"/> <!-- Palavras chaves de busca -->
         <meta name="author" content="Yuri Braga"/> <!-- criador do site -->
-        <meta http-equiv="refresh" content="50"> <!-- marcação de tempo de atualização da página -->
-            <!-- Título da página -->
+        <!-- Título da página -->
             <title>Devaria 01 - Fale conosco</title>
     </head>
 
@@ -20,7 +20,6 @@
             <a href="index.html" class="link-logo">
                 <img src="public/midia/logo.svg" alt="logo devaria"/>
             </a>
-           <h1>Fale conosco</h1> <!-- Marcação de titulo -->
            <nav class="menu"> <!-- Marcação de navegação - Menu/botões -->
                 <ul> <!-- Marcação de lista em formato de tópicos -->
                     <li><a href="index.html">Home</a></li> <!-- opção da lista -->
@@ -34,46 +33,47 @@
 
         <main>
             <!-- conteudo principal da página - Meio do site -->
-            <h2>Para enviar uma mensagem para o Yuri Braga, preencha abaixo o formulário e clique em enviar</h2>
-            <section>  <!-- seção do documento -->
-                <form action="index.html"> <!-- Criar um formulário -->
-                    <p>
-                        <label>Nome: </label><input type="text" name="Nome" /> <!-- Marcação de legenda para um campo do form com marcação de entrada de texto simples -->
-                    </p>
-                    <p>
-                        <label>Data de Nascimento: </label><input type="date" name="Data" /> <!-- Marcação de legenda para um campo do form com marcação de entrada de data -->
-                    </p>
-                    <p>
-                        <label>E-mail:</label><input type="text" name="Email" /> <!-- Marcação de legenda para um campo do form com marcação de entrada de texto simples -->
-                    </p>
-                    <p>
+            <h1 class="title text-center">Fale conosco</h1> <!-- Marcação de titulo -->
+            <h2 class="sub-title text-center">Para enviar uma mensagem para o Yuri Braga, preencha abaixo o formulário e clique em enviar</h2>
+                <section>  <!-- seção do documento -->
+                <form action="index.html" class="contato-formulario margin-horizontal-20px"> <!-- Criar um formulário -->
+                    <div>
+                        <label>Nome: </label><input type="text" name="Nome" required="true" /> <!-- Marcação de legenda para um campo do form com marcação de entrada de texto simples -->
+                    </div>
+                    <div>
+                        <label>Data de Nascimento: </label><input type="date" name="Data" required="true" /> <!-- Marcação de legenda para um campo do form com marcação de entrada de data -->
+                    </div>
+                    <div>
+                        <label>E-mail:</label><input type="text" name="Email" required="true"/> <!-- Marcação de legenda para um campo do form com marcação de entrada de texto simples -->
+                    </div>
+                    <div>
                         <label>Comentário: </label>
-                        <textarea name="Comentario" rows="5" cols="50"></textarea> <!-- Marcação de legenda para um campo do form com marcação de entrada de texto multi-linhas -->
+                        <textarea name="Comentario" rows="5" cols="50" required="true"></textarea> <!-- Marcação de legenda para um campo do form com marcação de entrada de texto multi-linhas -->
                         <!-- Rows é linhas, cols é colunas, largura. -->
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <label>Sexo: </label>
-                        <input type="radio" name="Sexo" /> <label>Feminino</label> <!-- Marcação de um element botão de opção -->
-                        <input type="radio" name="Sexo" /> <label>Masculino</label> <!-- Marcação de um element botão de opção -->
-                    </p>
-                    <p>
+                        <input type="radio" name="Sexo" required="true"/> <span>Feminino</span> <!-- Marcação de um element botão de opção -->
+                        <input type="radio" name="Sexo" /> <span>Masculino</span> <!-- Marcação de um element botão de opção -->
+                    </div>
+                    <div>
                         <label>Onde nos conheceu? </label>  <!-- Marcação de lista de opções -->
-                        <select name="Conheceu"> <!-- Opções da marcação -->
+                        <select name="Conheceu" required="true"> <!-- Opções da marcação -->
                             <option selected>Youtube</option> 
                             <option>Google</option>
                             <option>Instagram</option>
                             <option>Amigos</option>
                             <option>Outros</option>
                         </select>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <input type="checkbox" name="Novidades" value="Aceite" /> <!-- Marcação  de elemento de opção -->
-                        <label>Aceito receber e-mails de Novidades</label> <!-- Marcação botão de ação  do formulário -->
-                    </p>
-                    <p>
+                        <span>Aceito receber e-mails de Novidades</span> <!-- Marcação botão de ação  do formulário -->
+                    </div>
+                    <div>
                         <input type="submit" name="Enviar" value="Enviar" />
                         <input type="reset" name="Limpar" value="Limpar" />
-                    </p>
+                    </div>
                 </form>
             </section>
         </main>
