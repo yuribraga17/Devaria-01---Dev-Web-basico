@@ -2,8 +2,13 @@
 <html lang="pt-BR"> <!-- Indicação que a língua do documento é português brasil -->
     <head> <!-- Configurações e parametros -->
         <meta charset="utf-8" /> <!-- Indicação da codificação decaracteres do documento -->
-        <!-- Título da página -->
-        <title>Devaria 01 - Dev web basico</title>
+        <meta name="description" content="Página do Yuri Braga, coloque
+        a descrição do site aqui, upgrade!"> <!-- Descrição do site -->
+        <meta name="keywords" content="palavras, chaves, de, busca, melhorando, no, google"> <!-- Palavras chaves de busca -->
+        <meta name="author" content="Yuri Braga"/> <!-- criador do site -->
+        <meta http-equiv="refresh" content="50"> <!-- marcação de tempo de atualização da página -->
+            <!-- Título da página -->
+            <title>Devaria 01 - Dev web basico</title>
     </head>
 
     <body>
@@ -22,21 +27,19 @@
 
         <main>
             <!-- conteudo principal da página - Meio do site -->
-            <section> <!-- seção do documento -->
-                <h3>Para os <abbr title="Developers">DEVS</abbr> saberem, a Devaria usa Microsoft Azure</abbr> </h3>
-                <blockquote cite="https://azure.microsoft.com/pt-br/solutions/">
-                    Resolva os problemas de negócios com combinações comprovadamente eficientes de produtos
-                    e serviços do Azure.
-                </blockquote>
-            </section>
             <section>  <!-- seção do documento -->
-                <img src="imagens/home.png" width="500px" alt="Foto main" /> <!-- Marcação de uma imagem -->
+                <!-- <img src="imagens/home.png" width="500px" alt="Foto main" /> --> <!-- Marcação de uma imagem -->
+                <figure>
+                    <img src="imagens/home.png" width="500" />
+                    <figcaption>Foto da home</figcaption> <!-- Texto de baixo da foto -->
+                </figure>
             </section>
+            <!-- Seção de vídeo youtube
             <section>
                 <di>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/xnQSjctcpRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </di>
-            </section>
+            </section> -->
             <!-- Seção para vídeo sem estar upado
             <section>
                 <div>
@@ -46,6 +49,14 @@
                 </div>
             </section>
             -->
+
+            <section> <!-- seção do documento -->
+                <h3>Para os <abbr title="Developers">DEVS</abbr> saberem, a Devaria usa <abbr title="Microsoft">MS</abbr> Azure</h3> <!-- Marcação de explicação com abreviação -->
+                <blockquote cite="https://azure.microsoft.com/pt-br/solutions/"> <!-- Marcação de citação -->
+                    Resolva os problemas de negócios com combinações comprovadamente eficientes de produtos
+                    e serviços do Azure.
+                </blockquote>
+            </section>
         </main>
 
         <footer>
